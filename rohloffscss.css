@@ -13,9 +13,65 @@ h1 {
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    transition-duration: 3s;
+    
     }
 .button {
-    
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: black;
+  -webkit-background-clip: text;
+  background-clip: border-box;
+  font-size: xx-large;
+  padding: 1%;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  font-weight: bold;
 
+    }
+.button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
 
+.Rainbow:hover {
+
+      color: white;
+    }
+
+.container {
+      height: 200px;
+      position: relative;
+
+    }
+.center {
+      margin: 0;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+.loremipsum {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 1em arial;
+    padding: 1%;
+    background-image: repeating-linear-gradient(to right,
+  #c4e17f 0px, #c4e17f 50px,
+  #f7fdca 50px, #f7fdca 100px,
+  #fad071 100px, #fad071 150px,
+  #f0766b 150px, #f0766b 200px,
+  #db9dbe 200px, #db9dbe 250px,
+  #c49cdf 250px, #c49cdf 300px,
+  #6599e2 300px, #6599e2 350px,
+  #61c2e4 350px, #61c2e4 400px);
+    background-size: 100% 10px;
+    background-repeat:no-repeat;    
+  
+  }
+.loremipsum:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition-delay: 1ms;
+  transition-duration: 0.4s;
 }
